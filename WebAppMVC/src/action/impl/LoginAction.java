@@ -17,7 +17,7 @@ public class LoginAction extends AbstractAction {
 	@Override
 	public String execute(HttpServletRequest request) {
 		System.out.println("execute");
-		String page = "/login.jsp";
+		String page = "/WEB-INF/pages/login1.jsp";
 		String notExists = "";
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
@@ -39,9 +39,9 @@ public class LoginAction extends AbstractAction {
 			}
 		} catch (Exception e) {
 			System.out.println("exception");
-			
+			page="/WEB-INF/pages/login1.jsp";
 			request.setAttribute("validationError", e.getMessage());
-			return "/login.jsp";
+			return page;
 
 		}
 		return page;

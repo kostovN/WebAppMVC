@@ -8,7 +8,7 @@
 <title>Home</title>
 </head>
 <body>
-<form action="../web06/application/home" method="post">
+<form action="../application/home" method="post">
 	<table>
 			<tr>
 				<td><c:out value = "${sessionScope.loginMessage}"></c:out></td>

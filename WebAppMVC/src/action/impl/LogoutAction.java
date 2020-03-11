@@ -9,7 +9,7 @@ public class LogoutAction extends AbstractAction {
 	@Override
 	public String execute(HttpServletRequest request) {
 		request.getSession().invalidate();
-		return "../login.jsp";
+		return "/WEB-INF/pages/login1.jsp";
 	}
 
 	
