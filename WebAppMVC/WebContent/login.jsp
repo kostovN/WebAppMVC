@@ -8,7 +8,7 @@
 <title>Login</title>
 </head>
 <body>
-<form action="../web06/application/login" method="post">
+<form action="../application/login" method="post">
 	<table>
 			<tr>
 				<td>Username:</td>

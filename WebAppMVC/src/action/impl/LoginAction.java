@@ -41,7 +41,7 @@ public class LoginAction extends AbstractAction {
 			System.out.println("exception");
 			
 			request.setAttribute("validationError", e.getMessage());
-			return page;
+			return "/login.jsp";
 
 		}
 		return page;
